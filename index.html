@@ -108,10 +108,10 @@
       to { opacity: 1; transform: none; }
     }
     .blur-transition {
-      animation: motionBlur 0.3s ease-out;
+      animation: motionBlur 0.6s ease-out;
     }
     @keyframes motionBlur {
-      0% { filter: blur(2px); }
+      0% { filter: blur(4px); }
       100% { filter: blur(0); }
     }
     footer {
@@ -139,7 +139,6 @@
     <a href="#services" aria-label="Go to Services section">Services</a>
     <a href="#skills" aria-label="Go to Skills section">Skills</a>
     <a href="#projects" aria-label="Go to Projects section">Projects</a>
-    <a href="#testimonials" aria-label="Go to Testimonials section">Testimonials</a>
     <a href="#contact" aria-label="Go to Contact section">Contact</a>
   </nav>
 
@@ -198,8 +197,6 @@
     </div>
   </section>
 
- 
-
   <section id="contact">
     <h2 class="fade-in">Get in Touch</h2>
     <p class="fade-in" style="text-align: center; max-width: 700px; margin: auto;">
@@ -212,7 +209,7 @@
   </section>
 
   <footer>
-    <p>&copy; <span id="year"></span> Bregvva. All rights reserved.</p>
+    <p>© <span id="year"></span> Bregvva. All rights reserved.</p>
     <p>Designed with passion, built with HTML & CSS.</p>
   </footer>
 
@@ -231,7 +228,7 @@
         targetSection.classList.add('blur-transition');
         setTimeout(() => {
           targetSection.classList.remove('blur-transition');
-        }, 300);
+        }, 600);
 
         // Smooth scroll to section
         targetSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
